@@ -17,7 +17,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		Main customerOrder = new Main();
 																// add input file below
-		BufferedReader reader = new BufferedReader(new FileReader("otherCustomer.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader("customer.txt"));
 		while (reader.ready()) {
 			String order = reader.readLine();
 			customerOrder.parseLine(order);
@@ -98,7 +98,7 @@ public class Main {
 	}
 
 	/*
-	 * ‐ test method for MyStack.
+	 * â€� test method for MyStack.
 	 */
 	public void testMyStack() {
 		// test burger with different data type

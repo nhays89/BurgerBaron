@@ -1,8 +1,0 @@
-Burger
-Double Baron Burger
-Triple Chicken Burger with Onions Cheese but no Cheddar
-Baron Burger with no Veggies Sauce but Baron-Sauce
-Double Burger with Mayonnaise Lettuce Mushrooms Pickles Onions Cheese Sauce but no Mozzarella
-Double Baron Burger with no Mozzarella Veggies but Onions
-Double Chicken Burger with no Mustard Mayonnaise
-
