@@ -29,10 +29,6 @@ public class Main {
 		// customerOrder.testMyStack();
 		// customerOrder.testBurger();
 	}
-	
-	public void insertCoolMethod() {
-		
-	}
 
 	/**
 	 * parse input string from customer order.
