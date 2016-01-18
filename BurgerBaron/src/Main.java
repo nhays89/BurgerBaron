@@ -3,6 +3,12 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
+ * Provides a driver for outputting order to console.
+ * Input (burger order that meets criteria below) can come in using command line args. 
+ * Each order needs to be in following format:
+ * ● <Patty Count> <Patty Type> Baron Burger with no <omissions> but <exceptions> 
+ * ● <Patty Count> <Patty Type> Burger with <additions> but no <exceptions>
+ * 
  * @author Nicholas Hays & Ethan Rowell
  */
 public class Main {
@@ -11,7 +17,11 @@ public class Main {
 	public Main() {
 		// does nothing
 	}
-
+	/**
+	 * driver
+	 * @param args File input
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 
 		if (args.length > 0) {
@@ -105,7 +115,7 @@ public class Main {
 	}
 
 	/*
-	 * â€� test method for MyStack.
+	 * test method for MyStack.
 	 */
 	public void testMyStack() {
 		// test burger with different data type
