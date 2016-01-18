@@ -1,7 +1,8 @@
 import java.util.EmptyStackException;
 
 /**
- * Provides a structure to store data.
+ * Data structure implemented with a doubly linked list for 
+ * efficient toString() implementation (no iterator required). 
  * @author Nicholas Hays
  */
 public class MyStack<T> {
@@ -23,22 +24,19 @@ public class MyStack<T> {
 			mySize++;
 			return;
 		}
-		
 		Node node = new Node(null,myHead, item);
-		node.myPrev = myHead;
 		myHead.myNext = node;
 		myHead = node;
 		mySize++;
 		
 	}
 	public T peek() {
+		if(isEmpty()) throw new EmptyStackException();
 		return myHead.myData;
 	}
 	
 	public T pop() throws EmptyStackException {
-		if(myHead ==  null) {
-			throw new EmptyStackException();
-		}
+		if(myHead ==  null) throw new EmptyStackException();
 		T theHead = null;
 		if(!myIsEmpty) {
 			theHead = myHead.myData;
