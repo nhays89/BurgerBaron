@@ -13,15 +13,24 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws IOException {
-		Main customerOrder = new Main();
-																// add input file below
-		BufferedReader reader = new BufferedReader(new FileReader("customer.txt"));
-		while (reader.ready()) {
-			String order = reader.readLine();
-			customerOrder.parseLine(order);
-			orderCount++;
+
+		if (args.length > 0) {
+			System.out.println("Args");
+			// used for parsing command line args
+			for(String arg : args) {
+				parseLine(arg);
+			}
+		} else {
+			System.out.println("File");
+			// used for designating input file
+			BufferedReader reader = new BufferedReader(new FileReader("customer.txt"));
+			while (reader.ready()) {
+				String order = reader.readLine();
+				parseLine(order);
+				orderCount++;
+			}
+			reader.close();
 		}
-		reader.close();
 
 		// test below:
 		// customerOrder.testMyStack();
@@ -33,7 +42,7 @@ public class Main {
 	 * 
 	 * @throws IOException
 	 */
-	public void parseLine(String line) throws IOException {
+	public static void parseLine(String line) throws IOException {
 		if (line.equals(""))
 			return;
 		int numOfPatties = 1;
