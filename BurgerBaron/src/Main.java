@@ -9,7 +9,7 @@ import java.io.IOException;
  * ● <Patty Count> <Patty Type> Baron Burger with no <omissions> but <exceptions> 
  * ● <Patty Count> <Patty Type> Burger with <additions> but no <exceptions>
  * 
- * @author Nicholas Hays & Ethan Rowell
+ * @author Nicholas Hays
  */
 public class Main {
 	private static int orderCount;

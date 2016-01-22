@@ -1,5 +1,5 @@
 /**
- * @author Nicholas Hays & Ethan Rowell
+ * @author Nicholas Hays
  */
 public class Burger {
 	private int myPattyCount;
