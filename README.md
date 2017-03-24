@@ -1,4 +1,4 @@
-#BurgerBaron
+# BurgerBaron
 
 Program built in java that incorporates doubly linked lists to faciliatate a burger ordering service; in particular, a 'baron' burger.The baron burger has a specific list of ingredients that make it unique. The baron burger recipe is as follows (top to bottom): 
 
@@ -30,7 +30,7 @@ Here are some sample orders:
 
 As you can see, the customer has a limited selection of ingredients, but they can add and remove ingredients from the burger as they so desire but can only do so in a specific order. There are two styles in which a burger can be interpreted:
 
-###Order Format
+### Order Format
 ---
 1. "'Patty Count' 'Patty Type' Baron Burger with no 'omissions' but 'exceptions'"
 2.  "'Patty Count' 'Patty Type' Burger with 'additions' but no 'exceptions'".
